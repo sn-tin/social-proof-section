@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Spartan';
+    background-color: rgb(255, 255, 255);
+    font-size: 13px;
+    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+}
+
+h1, .card-title, .ratings p {
+    font-weight: 700;
+}
+
+/* Container */
+
+.container {
+    padding: 60px 40px;
+}
+
+/* Top Part */
+
+.top-part {
+    color: hsl(300, 43%, 22%);
+    text-align: center;
+}
+
+/* Heading */
+
+.headings {
+    margin-bottom: 10px;
+}
+
+.headings p {
+    font-weight: 500;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+/* Ratings  */
+
+.ratings {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    line-height: 2;
+}
+
+.ratings p {
+    margin-bottom: 0;
+}
+
+/* Bottom Part */
+
+.bottom-part {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Cards */
+
+.card {
+    border-radius: 5px;
+    background-color: hsl(300, 43%, 22%);
+    padding: 15px 10px;
+}
+
+.card img {
+    width: 40px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.card-title {
+    line-height: 1;
+    font-size: 14px;
+}
+
+.sub-title {
+    color: hsl(333, 80%, 67%);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 12px;
+    line-height: 2;
+}
+
+
+
+@media (min-width: 900px) {
+
+    body {
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-position: top left, bottom right;
+        font-size: 15px;
+        height: 110vh;
+    }
+    
+    .container {
+        padding: 90px 40px;
+        text-align: left;
+    }
+    
+    /* Top Part */
+    .top-part {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .headings {
+        width: 40%;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+
+    .ratings-grid {
+        margin-top: 30px;
+    }
+
+    .ratings {
+        width: 80%;
+        padding: 15px 20px;
+        margin-bottom: 15px;
+    }
+
+    .ratings p {
+        padding-left: 25px;
+    }
+
+    .ratings img {
+        margin-left: 4px;
+    }
+
+    .report-guru {
+        transform: translateX(10%);
+    }
+
+    .best-tech {
+        transform: translateX(20%);
+    }
+
+    /* Bottom Part */
+    .card-title, .sub-title, .card-text {
+        font-size: 15px;
+    }
+
+    .card {
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    .irene-card {
+        transform: translateY(10%);
+    }
+
+    .anne-card {
+        transform: translateY(20%);
+    }
+}
